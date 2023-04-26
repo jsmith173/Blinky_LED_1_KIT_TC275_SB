@@ -44,6 +44,16 @@ IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
 int core0_main(void)
 {
+	// test
+	int c=1;
+	char a[] = "msg1";
+	char b[] = "msg2";
+	
+	if (strcmp(a, b))
+		c=3;
+	//
+	
+	
     IfxCpu_enableInterrupts();
     
     /* !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
